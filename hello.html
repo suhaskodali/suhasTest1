@@ -13,21 +13,30 @@
   <input type="text" placeholder="Full Name" name="name">
   <button>Submit!</button>
 
-  <p>
-    Here, I will post some common git commands and their explanations. <br>
+  <a href="hello.html">Click here!</a> <br>
+  <a href="#mostImportantGitcommand">Most Important Git Command</a>
 
-    First is: git clone "url". After moving to a location of your choosing, use this command to download the entire repository into the folder. <br>
+  <ol>
+    <li>Here, I will post some common git commands and their explanations. </li>
 
-    Second is: git add "file name". I can save a file locally, but I also need to save or "commit" the file to git, so I can use git's version control software. This command pushes the file to a staging area. Mutliple files can be pushed to the staging area. <br>
+    <li>First is: <span style="color:red"> git clone "url" </span>. After moving to a location of your choosing, use this command to download the entire repository into the folder. </li>
 
-    Third is: git commit. This command takes all the files on the staging area and saves them. All of this is done locally on the computer. However, by commiting, you let git know this is a version that you might need later. <br>
+    <li>Second is: git add "file name". I can save a file locally, but I also need to save or "commit" the file to git, so I can use git's version control software. This command pushes the file to a staging area. Mutliple files can be pushed to the staging area. </li>
 
-    Fourth is: git push. This command takes all the commits you have done locally and add those commits to the online repository. I think it has to be the case that the folder with all your files has to be a future of a cloned file. <br>
+    <li>Third is: git commit. This command takes all the files on the staging area and saves them. All of this is done locally on the computer. However, by commiting, you let git know this is a version that you might need later. </li>
 
-    Fifth is: git branch. This command just lets you know the different branches in your repository and the branch you are currently on. Master is the main branch. <br>
+    <li id="mostImportantGitcommand">Fourth is: git push. This command takes all the commits you have done locally and add those commits to the online repository. I think it has to be the case that the folder with all your files has to be a future of a cloned file. </li>
 
-    Sixth is: git branch "name". This creates a new branch. git checkout "name": changes the branch to the new bran
+    <li>Fifth is: git branch. This command just lets you know the different branches in your repository and the branch you are currently on. Master is the main branch. </li>
 
-  </p>
+    <li>Sixth is: git branch "name". This creates a new branch. git checkout "name": changes the branch to the new branch. git merge "name": merges the master and a single branch. </li>
+
+    <li>Seventh is: git log. This shows all the changes/commits you have made. </li>
+
+    <li>
+      git fetch + git merge origin/master = git pull: this updates the local folder to current repository online and updates the Head to the current Head online.
+    </li>
+
+  </ol>
 </body>
 </html>
